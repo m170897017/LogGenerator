@@ -1,0 +1,1629 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Final Test Report</title>
+</head>
+
+<body>
+
+<p align="center"><b><font size="7">Final Test Report</font></b></p>
+
+<!-- script to hide detail  -->
+
+<script>
+    function isHidden(oDiv){
+      var vDiv = document.getElementById(oDiv);
+      vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+    }
+</script>
+
+<!-- content of changes/fixes since previous build -->
+<hr>
+<div style="cursor: hand" onclick="isHidden('div1')">
+    <input type="checkbox"/>
+	<span style="background-color: #FFFFFF"><font size="4">
+	<span style="font-style: italic; font-weight: 700">Changes/Fixes Since 
+	Previous Build</span></font></span></div>
+<hr>
+
+<div id='div1' style="display:none" contenteditable=true>
+	<table>
+	<tr><td>==================</td></tr><tr><td>OTHERS: REBASE TO R1C04</td></tr><tr><td><br /></td></tr><tr><td>==================</td></tr><tr><td>OTHERS: rebase from R1C02</td></tr><tr><td><br /></td></tr><tr><td>==================</td></tr><tr><td>OTHERS: Rebase to R1C01</td></tr><tr><td><br /></td></tr><tr><td>==================</td></tr><tr><td>Revert "OTHERS: rebase to 10/R1C01"</td></tr><tr><td><br /></td></tr><tr><td>NSPrelay/lib/shaper/AggrSharedMem.cc</td></tr><tr><td>NSPrelay/lib/shaper/AggrSharedMem.h</td></tr><tr><td>NSPrelay/plugin/ChargingMgr.cc</td></tr><tr><td>NSPrelay/plugin/ExtendedVirtualSession.cc</td></tr><tr><td>NSPrelay/plugin/ExtendedVirtualSession.h</td></tr><tr><td>NSPrelay/plugin/RGSession.cc</td></tr><tr><td>NSTmodule/test/scm/cfg/RG00.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG01.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG02.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG03.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG04.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG14.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG15.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG16.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/basicScmRG.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/scm_cr6855_RG.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/scm_rg_ct_google.cfg</td></tr><tr><td>NSdataprobe/lib/pcap_wrap/pcap_wrap.cc</td></tr><tr><td>NSfw/bin/SConscript</td></tr><tr><td>NSfw/bin/fastcompress/README</td></tr><tr><td>NSfw/bin/pagemap_walk/SConscript</td></tr><tr><td>NSfw/bin/pagemap_walk/pagemap_walk.c</td></tr><tr><td>NSfw/bin/scripts/cmdclusterexec</td></tr><tr><td>NSfw/bin/scripts/cmddeltaexec</td></tr><tr><td>NSfw/bin/scripts/cmdsessionexec</td></tr><tr><td>NSfw/bin/scripts/cmdsystemexec</td></tr><tr><td>NSfw/bin/scripts/execute-syntax-tree.xml</td></tr><tr><td>NSfw/bin/scripts/map_walk</td></tr><tr><td>NSfw/bin/scripts/nsmonitor</td></tr><tr><td>NSfw/bin/scripts/sos.rp.vpf.sh</td></tr><tr><td>NSfw/bin/scripts/syntax_tree.py</td></tr><tr><td>NSfw/etc/necs.rp.vpf.conf</td></tr><tr><td>NSfw/etc/necs.rp.vpf.monitor.conf</td></tr><tr><td>NSfw/pkg/NSfw.build</td></tr><tr><td>NSfw/pkg/NSfw.vpf.build</td></tr><tr><td>NSossstats/bin/scripts/oss-bearer</td></tr><tr><td>NSrecon/bin/reconinfo/ReconciliationFile.h</td></tr><tr><td>NSreporter/bin/ebmxmlparser/ebmxmlparser.cc</td></tr><tr><td>NSreporter/pkg/NSreporter.build</td></tr><tr><td>NSreporter/xml/sasn_ebm.xml</td></tr><tr><td>NSreporter/xml/sasn_ebm_event_specification.xml</td></tr><tr><td>NSrpcm/module/rpcm/rpcm.cc</td></tr><tr><td>NSrpcm/module/rpcm/rpcm.h</td></tr><tr><td>NSsimpleconf/bin/scripts/base.cfm</td></tr><tr><td>NSssrcards_samples/rp/samples/omi/cm/SConscript</td></tr><tr><td>NSssrcards_samples/rp/samples/omi/cm/cmCrashTestDummy.c</td></tr><tr><td>NSssrcards_samples/rp/samples/omi/cm/cmCrashTestLauncher.sh</td></tr><tr><td>NSssrcards_samples/rp/samples/omi/cm/ctd_template.sh</td></tr><tr><td>NStcp/module/TCPSocket.cc</td></tr><tr><td>NStsmssr/module/tsmssr/tsmssr.cc</td></tr><tr><td>NStsmssr/scripts/tsm.sh</td></tr><tr><td>build.info</td></tr><tr><td>ssr.rp.vpf.build.info</td></tr><tr><td>ssr.ssc.vpf.build.info</td></tr><tr><td>ssr.vpf.sasn-3pp.gdi</td></tr><tr><td><br /></td></tr><tr><td>==================</td></tr><tr><td>OTHERS: rebase to 10/R1C01</td></tr><tr><td><br /></td></tr><tr><td>NSPrelay/lib/shaper/AggrSharedMem.cc</td></tr><tr><td>NSPrelay/lib/shaper/AggrSharedMem.h</td></tr><tr><td>NSPrelay/plugin/ChargingMgr.cc</td></tr><tr><td>NSPrelay/plugin/ExtendedVirtualSession.cc</td></tr><tr><td>NSPrelay/plugin/ExtendedVirtualSession.h</td></tr><tr><td>NSPrelay/plugin/RGSession.cc</td></tr><tr><td>NSTmodule/test/scm/cfg/RG00.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG01.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG02.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG03.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG04.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG14.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG15.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/RG16.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/basicScmRG.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/scm_cr6855_RG.cfg</td></tr><tr><td>NSTmodule/test/scm/cfg/scm_rg_ct_google.cfg</td></tr><tr><td>NSdataprobe/lib/pcap_wrap/pcap_wrap.cc</td></tr><tr><td>NSfw/bin/SConscript</td></tr><tr><td>NSfw/bin/fastcompress/README</td></tr><tr><td>NSfw/bin/pagemap_walk/SConscript</td></tr><tr><td>NSfw/bin/pagemap_walk/pagemap_walk.c</td></tr><tr><td>NSfw/bin/scripts/cmdclusterexec</td></tr><tr><td>NSfw/bin/scripts/cmddeltaexec</td></tr><tr><td>NSfw/bin/scripts/cmdsessionexec</td></tr><tr><td>NSfw/bin/scripts/cmdsystemexec</td></tr><tr><td>NSfw/bin/scripts/execute-syntax-tree.xml</td></tr><tr><td>NSfw/bin/scripts/map_walk</td></tr><tr><td>NSfw/bin/scripts/nsmonitor</td></tr><tr><td>NSfw/bin/scripts/sos.rp.vpf.sh</td></tr><tr><td>NSfw/bin/scripts/syntax_tree.py</td></tr><tr><td>NSfw/etc/necs.rp.vpf.conf</td></tr><tr><td>NSfw/etc/necs.rp.vpf.monitor.conf</td></tr><tr><td>NSfw/pkg/NSfw.build</td></tr><tr><td>NSfw/pkg/NSfw.vpf.build</td></tr><tr><td>NSossstats/bin/scripts/oss-bearer</td></tr><tr><td>NSrecon/bin/reconinfo/ReconciliationFile.h</td></tr><tr><td>NSreporter/bin/ebmxmlparser/ebmxmlparser.cc</td></tr><tr><td>NSreporter/pkg/NSreporter.build</td></tr><tr><td>NSreporter/xml/sasn_ebm.xml</td></tr><tr><td>NSreporter/xml/sasn_ebm_event_specification.xml</td></tr><tr><td>NSrpcm/module/rpcm/rpcm.cc</td></tr><tr><td>NSrpcm/module/rpcm/rpcm.h</td></tr><tr><td>NSsimpleconf/bin/scripts/base.cfm</td></tr><tr><td>NSssrcards_samples/rp/samples/omi/cm/SConscript</td></tr><tr><td>NSssrcards_samples/rp/samples/omi/cm/cmCrashTestDummy.c</td></tr><tr><td>NSssrcards_samples/rp/samples/omi/cm/cmCrashTestLauncher.sh</td></tr><tr><td>NSssrcards_samples/rp/samples/omi/cm/ctd_template.sh</td></tr><tr><td>NStcp/module/TCPSocket.cc</td></tr><tr><td>NStsmssr/module/tsmssr/tsmssr.cc</td></tr><tr><td>NStsmssr/scripts/tsm.sh</td></tr><tr><td>build.info</td></tr><tr><td>ssr.rp.vpf.build.info</td></tr><tr><td>ssr.ssc.vpf.build.info</td></tr><tr><td>ssr.vpf.sasn-3pp.gdi</td></tr><tr><td><br /></td></tr><tr><td>==================</td></tr><tr><td>OTHERS: Rebase from R1B01</td></tr><tr><td><br /></td></tr><tr><td>==================</td></tr><tr><td>CR: FP32670 Diameter Agent and Self-learning</td></tr><tr><td><br /></td></tr><tr><td>NSTmodule/test/gx/DT_gx_FP32670.py</td></tr><tr><td>NSTmodule/test/gx/cfg/gx_omit_dest_host_initial.cfg</td></tr><tr><td>NSTmodule/test/gx/gx_FP32670_messages.py</td></tr><tr><td>NSTmodule/test/gy/DT_gy_FP32670.py</td></tr><tr><td>NSTmodule/test/gy/cfg/gy_omit_dest_host_initial.cfg</td></tr><tr><td>NSTmodule/test/gy/gy_FP32670_messages.py</td></tr><tr><td>NSdiametercom/module/diametercom/CTRLsession.cc</td></tr><tr><td>NSdiametercom/module/diametercom/CTRLsession.h</td></tr><tr><td>NSdiametercom/module/diametercom/DCCApplication.cc</td></tr><tr><td>NSdiametercom/module/diametercom/GxApplication.cc</td></tr><tr><td>NSdiametercom/module/diametercom/RxR7Application.cc</td></tr><tr><td>NSdiametercom/module/diametercom/RxR7Application.h</td></tr><tr><td>NSdiametercom/module/diametercom/diametercom.cc</td></tr><tr><td>NSdiametercom/module/diametercom/diametercom.h</td></tr><tr><td>NSdiametercom/module/diametercom/diametercom_config.cc</td></tr><tr><td>NSfw/bin/scripts/cmddeltaexec</td></tr><tr><td>NSsimpleconf/bin/scripts/base_control.cfm</td></tr><tr><td>NSsimpleconf/config/design/DG_FP32670_1.wzd</td></tr><tr><td>NSsimpleconf/config/design/DG_FP32670_2.wzd</td></tr><tr><td><br /></td></tr><tr><td>==================</td></tr><tr><td>OTHERS: update mtt version to be 47</td></tr><tr><td><br /></td></tr><tr><td>NSTmodule/test/envSet.sh</td></tr><tr><td>ssr.rp.vpf.build.info</td></tr><tr><td><br />
+	</table>
+</div>
+
+
+<!-- content of regression results -->
+<hr>
+<div style="cursor: hand" onclick="isHidden('div2')">
+    <input type="checkbox"/>
+	<span style="background-color: #FFFFFF; font-weight:700; font-style:italic">
+	<font size="4">Regression Results</font></span></div>
+<hr>
+
+<div id="div2" style="display:none" contenteditable=true>
+	<table>
+	<tr><td></td></tr><tr><td><br /></td></tr><tr><td>------------------------------------------------------------</td></tr><tr><td><br /></td></tr><tr><td>Packages used:</td></tr><tr><td><a href="https://jenkins-dev.netspira.eld.es.eu.ericsson.se/nexus/service/local/repositories/development/content/com/ericsson/SASN/x86-64-cxp9011657_10-R1C03_00_PL_BUILD_FEATURE_CBC_MSD_OMIT_DEST_HOST_11/SASN-x86-64-cxp9011657_10-R1C03_00_PL_BUILD_FEATURE_CBC_MSD_OMIT_DEST_HOST_11.dist" TARGET="_blank"> SASN-x86-64-cxp9011657_10-R1C03_00_PL_BUILD_FEATURE_CBC_MSD_OMIT_DEST_HOST_11.dist </a></td></tr><tr><td><a href="https://jenkins-dev.netspira.eld.es.eu.ericsson.se/nexus/service/local/repositories/development/content/com/ericsson/sasn/cxp9011657_10R1C03_00_CBC_MSD_OMIT_DEST_HOST_11/sasn-cxp9011657_10R1C03_00_CBC_MSD_OMIT_DEST_HOST_11.tar.gz" TARGET="_blank"> sasn-cxp9011657_10R1C03_00_CBC_MSD_OMIT_DEST_HOST_11.tar.gz </a></td></tr><tr><td><a href="https://jenkins-dev.netspira.eld.es.eu.ericsson.se/nexus/service/local/repositories/development/content/com/ericsson/sasnForHeuristicsTesting/10.R1C03_00_CBC_MSD_OMIT_DEST_HOST_11/sasnForHeuristicsTesting.10.R1C03_00_CBC_MSD_OMIT_DEST_HOST_11.tar.gz" TARGET="_blank"> sasnForHeuristicsTesting.10.R1C03_00_CBC_MSD_OMIT_DEST_HOST_11.tar.gz </a></td></tr><tr><td><a href="https://jenkins-dev.netspira.eld.es.eu.ericsson.se/nexus/service/local/repositories/official/content/com/ericsson/system/x86-64-cxp9011665_6_R1A01/system-x86-64-cxp9011665_6_R1A01.dist" TARGET="_blank"> system-x86-64-cxp9011665_6_R1A01.dist </a></td></tr><tr><td><a href="https://jenkins-dev.netspira.eld.es.eu.ericsson.se/nexus/service/local/repositories/official/content/com/ericsson/system-os/x86-64-cxp9011664_6_R1A06/system-os-x86-64-cxp9011664_6_R1A06.dist" TARGET="_blank"> system-os-x86-64-cxp9011664_6_R1A06.dist </a></td></tr><tr><td><a href="https://jenkins-dev.netspira.eld.es.eu.ericsson.se/nexus/service/local/repositories/official/content/com/ericsson/system-test/4.21-17.x86-64/system-test-4.21-17.x86-64.dist" TARGET="_blank"> system-test-4.21-17.x86-64.dist </a></td></tr><tr><td><a href="https://jenkins-dev.netspira.eld.es.eu.ericsson.se/nexus/service/local/repositories/development/content/com/ericsson/NSInjector/x86-64-cxp9011657_10-R1C03_00_PL_BUILD_FEATURE_CBC_MSD_OMIT_DEST_HOST_11/NSInjector-3.1-5.x86_64.rpm" TARGET="_blank"> NSInjector-3.1-5.x86_64.rpm </a></td></tr><tr><td><a href="https://jenkins-dev.netspira.eld.es.eu.ericsson.se/nexus/service/local/repositories/development/content/com/ericsson/NStrafrawio/x86-64-cxp9011657_10-R1C03_00_PL_BUILD_FEATURE_CBC_MSD_OMIT_DEST_HOST_11/NStrafrawio-0-1.x86_64.rpm" TARGET="_blank"> NStrafrawio-0-1.x86_64.rpm </a></td></tr><tr><td><a href="https://jenkins-dev.netspira.eld.es.eu.ericsson.se/nexus/service/local/repositories/official/content/com/ericsson/NSdist/x86-64-cxp9011658_6_R1A01/NSdist-x86-64-cxp9011658_6_R1A01.rpm" TARGET="_blank"> NSdist-x86-64-cxp9011658_6_R1A01.rpm </a></td></tr><tr><td><br /></td></tr><tr><td><br />
+	</table>
+</div>
+
+
+
+<!-- content of executive summary -->
+<hr>
+<div style="cursor: hand" onclick="isHidden('div3')">
+    <input type="checkbox"/>
+	<span style="background-color: #FFFFFF; font-style:italic; font-weight:700">
+	<font size="4">Executive Summary</font></span></div>
+<hr>	
+
+<div id="div3" style="display:none" contenteditable=true>
+	Total test cases: 10544, Failed test cases: 80, Skipped test cases: 248, passed test cases: 10216.         Pass rate is 97%.
+</div>
+
+	
+<!-- content of test result summary -->	
+<hr>	
+<div style="cursor: hand" onclick="isHidden('div4')">
+    
+	<span style="background-color: #FFFFFF; font-style:italic; font-weight:700">
+	<font size="4">Test Result Summary</font></span></div>
+<hr>
+	
+<div id="div4">
+    
+    <div style="cursor: hand" onclick="isHidden('div5')">
+	<ul>
+        
+		<li><input type="checkbox"/>Failed TS and different from LSV&nbsp;</li>
+	</ul>
+    </div>
+	<div id="div5" style="display:none" contenteditable=true><p>	<table>
+	<tr><th>(FW)-NSTanalyzer-tcpdc_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 104</td></tr>
+	<tr><td>&nbsp;-- Passed: 103</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-SASNDC-REP0510</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-caregression_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 130</td></tr>
+	<tr><td>&nbsp;-- Passed: 124</td></tr>	
+	<tr><td>&nbsp;TC-SASNANL-HTTPpipe060 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-SASNANL-SIP010</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 5</td></tr>
+	<tr><td>&nbsp;TC-SASNANL-SIP020<br>TC-SASNANL-SIP030<br>TC-SASNANL-SIP040<br>TC-SASNANL-SNMP010<br>TC-SASNANL-WSP020</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTreconflag-rcnflag_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 33</td></tr>
+	<tr><td>&nbsp;-- Passed: 27</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 4</td></tr>
+	<tr><td>&nbsp;TC-RECNFLAG-FAILOVER0030<br>TC-RECNFLAG-FAILOVER0040<br>TC-RECNFLAG-IPV60010<br>TC-RECNFLAG-IPV60020</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 2</td></tr>
+	<tr><td>&nbsp;TC-RECNFLAG-CONF0040<br>TC-RECNFLAG-CONF0050</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTgz-gz_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 85</td></tr>
+	<tr><td>&nbsp;-- Passed: 84</td></tr>	
+	<tr><td>&nbsp;TC-GZ-SIXCRE0040 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-GZ-NRADDR0010</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcdpi-cdpi_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 34</td></tr>
+	<tr><td>&nbsp;-- Passed: 33</td></tr>	
+	<tr><td>&nbsp;TC-PATDOWN-TRACE0030 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-SASNCDPI6-HINTDEF0030</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTgxgyreestablish-gxgyreestablish_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 142</td></tr>
+	<tr><td>&nbsp;-- Passed: 137</td></tr>	
+	<tr><td>&nbsp;TC-REESTABLISH-AVEA0070 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-REESTABLISH-AVEA0030</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 4</td></tr>
+	<tr><td>&nbsp;TC-REESTABLISH-GXINT0167<br>TC-REESTABLISH-GYINT0180<br>TC-REESTABLISH-GYINT0210<br>TC-REESTABLISH-GYINT0220</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTnai-nai_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 31</td></tr>
+	<tr><td>&nbsp;-- Passed: 27</td></tr>	
+	<tr><td>&nbsp;TC-NAI-RAD0010 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 2</td></tr>
+	<tr><td>&nbsp;TC-NAI-IPV6SEL0010<br>TC-NAI-SEL0010</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 2</td></tr>
+	<tr><td>&nbsp;TC-NAI-CONF0010<br>TC-NAI-CONF0020</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTsecurity-security_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 45</td></tr>
+	<tr><td>&nbsp;-- Passed: 43</td></tr>	
+	<tr><td>&nbsp;TC-SEC-OAMLC0005 #PA/RET<br>TC-SEC-OAMLC0007 #PA/RET<br>TC-SEC-OAMLC0009 #PA/RET<br>TC-SEC-OAMLC0017 #PA/RET<br>TC-SEC-SSH0002 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 2</td></tr>
+	<tr><td>&nbsp;TC-SEC-LOCALSSC0006<br>TC-SEC-OAMCLI0007</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTrxfw-rxfw_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 197</td></tr>
+	<tr><td>&nbsp;-- Passed: 195</td></tr>	
+	<tr><td>&nbsp;TC-RX-STATS0001 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-RXVOIP-SKYPFLOW0050</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 1</td></tr>
+	<tr><td>&nbsp;TC-RX-IPV6_SESSCREA0030</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-caregression_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 130</td></tr>
+	<tr><td>&nbsp;-- Passed: 121</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 4</td></tr>
+	<tr><td>&nbsp;TC-SASNANL-HTTP140<br>TC-SASNANL-MMS030<br>TC-SASNANL-SIP010<br>TC-SASNANL-WSP050</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 5</td></tr>
+	<tr><td>&nbsp;TC-SASNANL-SIP020<br>TC-SASNANL-SIP030<br>TC-SASNANL-SIP040<br>TC-SASNANL-SNMP010<br>TC-SASNANL-WSP020</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTssralrm-ssralrm_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 42</td></tr>
+	<tr><td>&nbsp;-- Passed: 36</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 3</td></tr>
+	<tr><td>&nbsp;TC-SSRALRM-UDR0020<br>TC-SSRALRM-UDR0030<br>TC-SSRALRM-UDR0040</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 3</td></tr>
+	<tr><td>&nbsp;TC-SSRALRM-DISTR0010<br>TC-SSRALRM-PEER0010<br>TC-SSRALRM-PEER0020</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTConfCheck-standalone-remote_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 444</td></tr>
+	<tr><td>&nbsp;-- Passed: 439</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 2</td></tr>
+	<tr><td>&nbsp;TC-RXAAR-CONF0030<br>TC-RXAAR-CONF0040</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 3</td></tr>
+	<tr><td>&nbsp;TC-SASNDC-CONF0130<br>TC-SASNDC-CONF0190<br>TC-SASNDC-CONF0210</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTsdn-sdn_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 110</td></tr>
+	<tr><td>&nbsp;-- Passed: 107</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-SDNDPI-DIM0010</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 2</td></tr>
+	<tr><td>&nbsp;TC-SDNDPI-ANALYS0010<br>TC-SDNDPI-DELTA010</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTgx-gx_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 239</td></tr>
+	<tr><td>&nbsp;-- Passed: 223</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 16</td></tr>
+	<tr><td>&nbsp;TC-GXR9ATM1-ERROR0100<br>TC-PCCRULES-CONF0010<br>TC-PCCRULES-CONF0030<br>TC-PCCRULES-CONF0050<br>TC-PCCRULES-CONF0070<br>TC-PCCRULES-DELTA0010<br>TC-PCCRULES-DELTA0020<br>TC-PCCRULES-DELTA0030<br>TC-PCCRULES-DELTA0041<br>TC-PCCRULES-DELTA0043<br>TC-PCCRULES-DELTA0044<br>TC-PCCRULES-DELTA0060<br>TC-PCCRULES-DELTA0061<br>TC-PCCRULES-DELTA0070<br>TC-PCCRULES-DELTA0071<br>TC-PCCRULES-GXCAP0030</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table></p></div>
+    
+    
+    <div style="cursor: hand" onclick="isHidden('div6')">
+	<ul>
+        
+		<li><input type="checkbox"/>Failed TS and same as LSV&nbsp;</li>
+	</ul>
+    </div>
+	<div id="div6" style="display:none" contenteditable=true><p>	<table>
+	<tr><th>(FW)-NSTgygzalignment-gygzalignment_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 13</td></tr>
+	<tr><td>&nbsp;-- Passed: 12</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-GYGZ-0060</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTqos_fw-sim_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 95</td></tr>
+	<tr><td>&nbsp;-- Passed: 94</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-QOS-USERCONF0070</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcom-com_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 67</td></tr>
+	<tr><td>&nbsp;-- Passed: 61</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 4</td></tr>
+	<tr><td>&nbsp;TC-IPCBRK-CONFLA0110<br>TC-IPCBRK-CONFLA0170<br>TC-IPCBRK-OAMC0230<br>TC-IPCBRK-OAMC0240</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 2</td></tr>
+	<tr><td>&nbsp;TC-IPCBRK-OAMC0040<br>TC-IPCBRK-OAMC0150</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTqbau_gx_fw-nstest_omitdest_ssr-sim_omitdest_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 13</td></tr>
+	<tr><td>&nbsp;-- Passed: 6</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 7</td></tr>
+	<tr><td>&nbsp;TC-GXGYOMIT-SSRGX0010<br>TC-GXGYOMIT-SSRGX0020<br>TC-GXGYOMIT-SSRGX0030<br>TC-GXGYOMIT-SSRGX0080<br>TC-GXGYOMIT-SSRGX0090<br>TC-GXGYOMIT-SSRGX0100<br>TC-GXGYOMIT-SSRGX0120</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTicap-icap_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 15</td></tr>
+	<tr><td>&nbsp;-- Passed: 14</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-icap-TIMER0050</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTgxgyreestablish-gxgyreestablish_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 142</td></tr>
+	<tr><td>&nbsp;-- Passed: 137</td></tr>	
+	<tr><td>&nbsp;TC-REESTABLISH-AVEA0070 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-REESTABLISH-AVEA0030</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 4</td></tr>
+	<tr><td>&nbsp;TC-REESTABLISH-GXINT0167<br>TC-REESTABLISH-GYINT0180<br>TC-REESTABLISH-GYINT0210<br>TC-REESTABLISH-GYINT0220</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTrxfw-nstest_omitdest_ssr-sim_omitdest_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 15</td></tr>
+	<tr><td>&nbsp;-- Passed: 3</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 12</td></tr>
+	<tr><td>&nbsp;TC-RXAAR-SSROMIT0010<br>TC-RXAAR-SSROMIT0020<br>TC-RXAAR-SSROMIT0030<br>TC-RXAAR-SSROMIT0050<br>TC-RXAAR-SSROMIT0060<br>TC-RXAAR-SSROMIT0070<br>TC-RXAAR-SSROMIT0080<br>TC-RXAAR-SSROMIT0090<br>TC-RXAAR-SSROMIT0100<br>TC-RXAAR-SSROMIT0110<br>TC-RXAAR-SSROMIT0120<br>TC-RXAAR-SSROMIT0140</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcdpi-cdpi_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 34</td></tr>
+	<tr><td>&nbsp;-- Passed: 25</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 9</td></tr>
+	<tr><td>&nbsp;TC-SASNCDPI6-HINTDEF0030<br>TC-SASNCDPI7-GENVOIP0010<br>TC-SASNCDPI7-GENVOIP0020<br>TC-SASNCDPI7-GENVOIP0030<br>TC-SASNCDPI7-GENVOIP0040<br>TC-SASNCDPI7-GENVOIP0050<br>TC-SASNCDPI7-GENVOIP0060<br>TC-SASNCDPI7-GENVOIP0070<br>TC-SASNCDPI7-GENVOIP0080</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTclustevol-clustevol_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 70</td></tr>
+	<tr><td>&nbsp;-- Passed: 69</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-CLUSTEVL-AFFIN0010</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTicap-icap_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 15</td></tr>
+	<tr><td>&nbsp;-- Passed: 14</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-icap-TIMER0050</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTconfigClients-configClients_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 5</td></tr>
+	<tr><td>&nbsp;-- Passed: 3</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 2</td></tr>
+	<tr><td>&nbsp;TC-CC-PARTNERIL0010<br>TC-CC-TELK0010</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table></p></div>
+    
+    <div style="cursor: hand" onclick="isHidden('div7')">
+	<ul>
+        
+		<li><input type="checkbox"/>Passed TS and different from LSV&nbsp;</li>
+	</ul>
+    </div>
+	<div id="div7" style="display:none" contenteditable=true><p>	<table>
+	<tr><th>(FW)-NSTgy-oracle-only_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 21</td></tr>
+	<tr><td>&nbsp;-- Passed: 21</td></tr>	
+	<tr><td>&nbsp;TC-MTRACE-GY0090 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTpycr5690-NSTpycr5690_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 165</td></tr>
+	<tr><td>&nbsp;-- Passed: 165</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6248_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 28</td></tr>
+	<tr><td>&nbsp;-- Passed: 28</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTinactimer-inactim_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 16</td></tr>
+	<tr><td>&nbsp;-- Passed: 16</td></tr>	
+	<tr><td>&nbsp;TC-INACTIM-INACTIM0030 #PA/RET<br>TC-INACTIM-IPV6INAC0025 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTtcpretransmit_fw-NSTtcpretransmit_fw_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 44</td></tr>
+	<tr><td>&nbsp;-- Passed: 44</td></tr>	
+	<tr><td>&nbsp;TC-TCPRETRANSMIT-206 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTHA_FT-ssr-sim_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 53</td></tr>
+	<tr><td>&nbsp;-- Passed: 52</td></tr>	
+	<tr><td>&nbsp;TC-HA-SW0010 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 1</td></tr>
+	<tr><td>&nbsp;TC-HA-MASTERCRASH0016</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-tcpdc_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 104</td></tr>
+	<tr><td>&nbsp;-- Passed: 104</td></tr>	
+	<tr><td>&nbsp;TC-SASNDC-DEL0140 #PA/RET<br>TC-SASNDC-REP0120 #PA/RET<br>TC-SASNDC-REP0420 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6678_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 79</td></tr>
+	<tr><td>&nbsp;-- Passed: 79</td></tr>	
+	<tr><td>&nbsp;TC-CR6678-MMS0270 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcheckCommands-NSTcheckCommands_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 43</td></tr>
+	<tr><td>&nbsp;-- Passed: 43</td></tr>	
+	<tr><td>&nbsp;TC-COMMAND-CHECKPLU0021 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-ipv6_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 122</td></tr>
+	<tr><td>&nbsp;-- Passed: 120</td></tr>	
+	<tr><td>&nbsp;TC-CANALIP6-STREAMIN0010.yml #PA/RET<br>TC-CANALIP6-WEBSTRM0040.yml #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 2</td></tr>
+	<tr><td>&nbsp;TC-CANALIP6-SIP0010.yml<br>TC-CANALIP6-SIP0020.yml</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTgy-gy_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 420</td></tr>
+	<tr><td>&nbsp;-- Passed: 398</td></tr>	
+	<tr><td>&nbsp;TC-CR6855-CR7378CS0030 #PA/RET<br>TC-CR6855-CR7378CS0070 #PA/RET<br>TC-CR6855-CR7378CS0080 #PA/RET<br>TC-CR6855-CR7378CS0090 #PA/RET<br>TC-CR6855-CR7378EG0021 #PA/RET<br>TC-CR6855-CR7378EG0030 #PA/RET<br>TC-CR6855-CR7378EG0040 #PA/RET<br>TC-CR6855-CR7378EG0090 #PA/RET<br>TC-CR6855-CR7378EG0101 #PA/RET<br>TC-CR6855-CR7378EG0103 #PA/RET<br>TC-CR6855-CR7378EG0110 #PA/RET<br>TC-CR6855-CR7378OT0040 #PA/RET<br>TC-CR6855-CR7378OT0050 #PA/RET<br>TC-CR6855-CSV0090 #PA/RET<br>TC-CR6855-EGCDR0010 #PA/RET<br>TC-CR6855-EGCDR0030 #PA/RET<br>TC-CR6855-EGCDR0110 #PA/RET<br>TC-CR6855-EGCDR0140 #PA/RET<br>TC-CR6855-EGCDR0170 #PA/RET<br>TC-CR6855-FIXED0030 #PA/RET<br>TC-CR6855-GCDR0010 #PA/RET<br>TC-CR6855-OTHER0021 #PA/RET<br>TC-CR6855-OTHER0022 #PA/RET<br>TC-GY-SIGN0091 #PA/RET<br>TC-GYURI-IEC00040 #PA/RET<br>TC-GYURI-IEC00070 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 22</td></tr>
+	<tr><td>&nbsp;TC-GY-SIGN0286<br>TC-MTRACE-GY0010<br>TC-MTRACE-GY0020<br>TC-MTRACE-GY0030<br>TC-MTRACE-GY0040<br>TC-MTRACE-GY0050<br>TC-MTRACE-GY0060<br>TC-MTRACE-GY0070<br>TC-MTRACE-GY0080<br>TC-MTRACE-GY0090<br>TC-MTRACE-GY0100<br>TC-MTRACE-GY0110<br>TC-MTRACE-GY0120<br>TC-MTRACE-GY0130<br>TC-MTRACE-GY0140<br>TC-MTRACE-GY0150<br>TC-MTRACE-GY0160<br>TC-MTRACE-GY0170<br>TC-MTRACE-GYIPV60010<br>TC-MTRACE-GYIPV60020<br>TC-MTRACE-GYIPV60030<br>TC-MTRACE-GYIPV60040</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTorangeMigration-orangeMigration_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 153</td></tr>
+	<tr><td>&nbsp;-- Passed: 145</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 8</td></tr>
+	<tr><td>&nbsp;TC-ORANGE-BlockMMSMultidest_WAP2_601<br>TC-ORANGE-BlockMMSMultidest_WAP2_602<br>TC-ORANGE-BlockMMSMultidest_WAP2_603<br>TC-ORANGE-BlockMMSMultidest_WAP2_604<br>TC-ORANGE-BlockMMSMultidest_WAP2_605<br>TC-ORANGE-BlockMMSMultidest_WAP2_606<br>TC-ORANGE-MMSinformation_WAP2_01<br>TC-ORANGE-MMSinformation_WAP2_02</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTratinggroup-ratinggroup_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 271</td></tr>
+	<tr><td>&nbsp;-- Passed: 258</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 13</td></tr>
+	<tr><td>&nbsp;TC-RG-CONF0020<br>TC-RG-CONF0150<br>TC-RG-CONF0151<br>TC-RG-CONF0153<br>TC-RG-CONF0154<br>TC-RG-CONF0155<br>TC-RG-CONF0156<br>TC-RG-CONF0157<br>TC-RG-CONF0158<br>TC-RG-CONF0170<br>TC-RG-CONF0200<br>TC-RG-CONF0210<br>TC-RG-GYBASIC0244</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTebm-NSTebm_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 160</td></tr>
+	<tr><td>&nbsp;-- Passed: 156</td></tr>	
+	<tr><td>&nbsp;TC-EBM-URLDOMAI0040 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 4</td></tr>
+	<tr><td>&nbsp;TC-EBM-GRANULAR0040<br>TC-EBM-GRANULAR0050<br>TC-EBM-GRANULAR0060<br>TC-EBM-GRANULAR0070</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6716_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 20</td></tr>
+	<tr><td>&nbsp;-- Passed: 20</td></tr>	
+	<tr><td>&nbsp;TC-SINGTEL-NOETC0090 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTorangeMigration-orangeMigration_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 153</td></tr>
+	<tr><td>&nbsp;-- Passed: 145</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 8</td></tr>
+	<tr><td>&nbsp;TC-ORANGE-BlockMMSMultidest_WAP2_601<br>TC-ORANGE-BlockMMSMultidest_WAP2_602<br>TC-ORANGE-BlockMMSMultidest_WAP2_603<br>TC-ORANGE-BlockMMSMultidest_WAP2_604<br>TC-ORANGE-BlockMMSMultidest_WAP2_605<br>TC-ORANGE-BlockMMSMultidest_WAP2_606<br>TC-ORANGE-MMSinformation_WAP2_01<br>TC-ORANGE-MMSinformation_WAP2_02</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTipv4v6-vm_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 57</td></tr>
+	<tr><td>&nbsp;-- Passed: 57</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTtopuri-topuri_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 46</td></tr>
+	<tr><td>&nbsp;-- Passed: 46</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSThudo2-ssr-only_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 4</td></tr>
+	<tr><td>&nbsp;-- Passed: 4</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr6379-cr6379_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 69</td></tr>
+	<tr><td>&nbsp;-- Passed: 69</td></tr>	
+	<tr><td>&nbsp;TC-CR6379-IPV4REP0050 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTqbau_gx_fw-qbau_gx_fw_ssr-sim_gx_fw_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 177</td></tr>
+	<tr><td>&nbsp;-- Passed: 177</td></tr>	
+	<tr><td>&nbsp;TC-GX-CONF0080 #PA/RET<br>TC-GX-CONF0090 #PA/RET<br>TC-GX-EPROP0010 #PA/RET<br>TC-GX-EPROP0020 #PA/RET<br>TC-GX-EPROP0021 #PA/RET<br>TC-GX-EPROP0022 #PA/RET<br>TC-GX-EPROP0023 #PA/RET<br>TC-GX-EPROP0030 #PA/RET<br>TC-GX-EPROP0031 #PA/RET<br>TC-GX-EPROP0032 #PA/RET<br>TC-GX-EPROP0033 #PA/RET<br>TC-GX-EPROP0034 #PA/RET<br>TC-GX-EPROP0040 #PA/RET<br>TC-GX-EPROP0041 #PA/RET<br>TC-GX-EPROP0042 #PA/RET<br>TC-GX-EPROP0043 #PA/RET<br>TC-GX-EPROP0044 #PA/RET<br>TC-GX-EPROP0050 #PA/RET<br>TC-GX-EPROP0051 #PA/RET<br>TC-GX-EPROP0052 #PA/RET<br>TC-GX-EPROP0053 #PA/RET<br>TC-GX-EPROP0054 #PA/RET<br>TC-GX-EPROP0055 #PA/RET<br>TC-GX-EPROP0056 #PA/RET<br>TC-GX-EPROP0060 #PA/RET<br>TC-GX-EPROP0070 #PA/RET<br>TC-GX-EPROP0071 #PA/RET<br>TC-GX-EPROP0072 #PA/RET<br>TC-GX-EPROP0073 #PA/RET<br>TC-GX-EPROP0080 #PA/RET<br>TC-GX-EPROP0090 #PA/RET<br>TC-GX-EPROP0100 #PA/RET<br>TC-GX-EPROP0110 #PA/RET<br>TC-GX-EPROP0120 #PA/RET<br>TC-GX-ERR0010 #PA/RET<br>TC-GX-ERR0030 #PA/RET<br>TC-GX-ERR0040 #PA/RET<br>TC-GX-ERRipv60010 #PA/RET<br>TC-GX-GGSN00065979 #PA/RET<br>TC-GX-GGSN00097283 #PA/RET<br>TC-GX-QBAU_ACTION0010 #PA/RET<br>TC-GX-QBAU_ACTION0020 #PA/RET<br>TC-GX-QBAU_ACTION0030 #PA/RET<br>TC-GX-QBAU_ACTION0040 #PA/RET<br>TC-GX-QBAU_ACTION0050 #PA/RET<br>TC-GX-QBAU_ACTION0060 #PA/RET<br>TC-GX-QBAU_ACTION0070 #PA/RET<br>TC-GX-QBAU_ACTION0080 #PA/RET<br>TC-GX-QBAU_ACTION0090 #PA/RET<br>TC-GX-QBAU_ACTION0091 #PA/RET<br>TC-GX-QBAU_ACTION0092 #PA/RET<br>TC-GX-QBAU_ACTION0093 #PA/RET<br>TC-GX-QBAU_ACTIONipv60040 #PA/RET<br>TC-GX-QBAU_ACTIONipv60050 #PA/RET<br>TC-GX-QBAU_ACTIONipv60060 #PA/RET<br>TC-GX-QBAU_ACTIONipv60090 #PA/RET<br>TC-GX-QBAU_PARAM0010 #PA/RET<br>TC-GX-QBAU_PARAM0011 #PA/RET<br>TC-GX-QBAU_PARAM0020 #PA/RET<br>TC-GX-QBAU_PARAM0030 #PA/RET<br>TC-GX-QBAU_PARAM0040 #PA/RET<br>TC-GX-QBAU_PARAM0050 #PA/RET<br>TC-GX-QBAU_PARAM0060 #PA/RET<br>TC-GX-QBAU_PARAM0070 #PA/RET<br>TC-GX-QBAU_PARAMipv60030 #PA/RET<br>TC-GX-QBAU_REPORT0020 #PA/RET<br>TC-GX-QBAU_REPORT0030 #PA/RET<br>TC-GX-QBAU_REPORT0040 #PA/RET<br>TC-GX-QBAU_REPORT0050 #PA/RET<br>TC-GX-QBAU_REPORTipv60030 #PA/RET<br>TC-GX-QBAU_REPORTipv60040 #PA/RET<br>TC-GX-R7REQ0010 #PA/RET<br>TC-GX-R7REQ0020 #PA/RET<br>TC-GX-R7REQ0021 #PA/RET<br>TC-GX-R7REQ0022 #PA/RET<br>TC-GX-R7REQ0030 #PA/RET<br>TC-GX-R7REQ0040 #PA/RET<br>TC-GX-R7REQ0050 #PA/RET<br>TC-GX-R7REQipv60010 #PA/RET<br>TC-GX-R7REQipv60030 #PA/RET<br>TC-GX-R7REQipv60040 #PA/RET<br>TC-GX-R7RESP0010 #PA/RET<br>TC-GX-R7RESP0011 #PA/RET<br>TC-GX-R7RESP0012 #PA/RET<br>TC-GX-R7RESP0013 #PA/RET<br>TC-GX-R7RESP0014 #PA/RET<br>TC-GX-R7RESP0015 #PA/RET<br>TC-GX-R7RESP0020 #PA/RET<br>TC-GX-R7RESP0030 #PA/RET<br>TC-GX-R7RESP0040 #PA/RET<br>TC-GX-R7RESP0050 #PA/RET<br>TC-GX-R7RESP0060 #PA/RET<br>TC-GX-R7RESP0061 #PA/RET<br>TC-GX-R7SUPPORT0020 #PA/RET<br>TC-GX-R7SUPPORT0030 #PA/RET<br>TC-GX-R7SUPPORT0040 #PA/RET<br>TC-GX-R7SUPPORT0041 #PA/RET<br>TC-GX-R7SUPPORT0050 #PA/RET<br>TC-GX-R7SUPPORT0051 #PA/RET<br>TC-GX-R7SUPPORT0060 #PA/RET<br>TC-GX-R7SUPPORT0061 #PA/RET<br>TC-GX-R7SUPPORT0070 #PA/RET<br>TC-GX-R7SUPPORT0071 #PA/RET<br>TC-GX-R7SUPPORT0080 #PA/RET<br>TC-GX-R7SUPPORT0081 #PA/RET<br>TC-GX-R7SUPPORT0090 #PA/RET<br>TC-GX-R7SUPPipv60030 #PA/RET<br>TC-GX-R7SUPPipv60040 #PA/RET<br>TC-GX-RULE0010 #PA/RET<br>TC-GX-RULE0011 #PA/RET<br>TC-GX-RULE0012 #PA/RET<br>TC-GX-RULE0020 #PA/RET<br>TC-GX-RULE0021 #PA/RET<br>TC-GX-RULE0022 #PA/RET<br>TC-GX-RULE0030 #PA/RET<br>TC-GX-RULE0040 #PA/RET<br>TC-GX-RULE0050 #PA/RET<br>TC-GX-RULE0060 #PA/RET<br>TC-GX-RULE0070 #PA/RET<br>TC-GX-RULE0080 #PA/RET<br>TC-GX-RULE0090 #PA/RET<br>TC-GX-RULE0100 #PA/RET<br>TC-GX-RULE0101 #PA/RET<br>TC-GX-RULE0102 #PA/RET<br>TC-GX-RULE0103 #PA/RET<br>TC-GX-RULE0110 #PA/RET<br>TC-GX-RULE0111 #PA/RET<br>TC-GX-RULE0112 #PA/RET<br>TC-GX-RULE0120 #PA/RET<br>TC-GX-RULE0121 #PA/RET<br>TC-GX-RULE0122 #PA/RET<br>TC-GX-RULE0123 #PA/RET<br>TC-GX-RULE0130 #PA/RET<br>TC-GX-RULE0131 #PA/RET<br>TC-GX-RULE0132 #PA/RET<br>TC-GX-RULE0133 #PA/RET<br>TC-GX-RULE0134 #PA/RET<br>TC-GX-RULE0135 #PA/RET<br>TC-GX-RULE0140 #PA/RET<br>TC-GX-RULE0141 #PA/RET<br>TC-GX-RULE0142 #PA/RET<br>TC-GX-STATS0020 #PA/RET<br>TC-GX-STATS0030 #PA/RET<br>TC-GX-STATS0040 #PA/RET<br>TC-GX-STATS0047 #PA/RET<br>TC-GX-STATS0048 #PA/RET<br>TC-GX-STATS0049 #PA/RET<br>TC-GX-STATS0050 #PA/RET<br>TC-GX-STATS0051 #PA/RET<br>TC-GX-STATS0060 #PA/RET<br>TC-GX-STATS0061 #PA/RET<br>TC-GX-STATS0070 #PA/RET<br>TC-GX-STATS0080 #PA/RET<br>TC-GX-STATS0090 #PA/RET<br>TC-GX-STATS0100 #PA/RET<br>TC-GX-STATS0110 #PA/RET<br>TC-GX-STATS0120 #PA/RET<br>TC-GX-STATSipv60020 #PA/RET<br>TC-GX-STATSipv60030 #PA/RET<br>TC-GX-STATSipv60040 #PA/RET<br>TC-GX-STATSipv60061 #PA/RET<br>TC-GX-STATSipv60080 #PA/RET<br>TC-GX-STATSipv60090 #PA/RET<br>TC-GX-STATSipv60100 #PA/RET<br>TC-GX-STATSipv60120 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTgy-gy_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 420</td></tr>
+	<tr><td>&nbsp;-- Passed: 398</td></tr>	
+	<tr><td>&nbsp;TC-CR6855-CSV0090 #PA/RET<br>TC-GY-SIGN0297 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 22</td></tr>
+	<tr><td>&nbsp;TC-GY-SIGN0286<br>TC-MTRACE-GY0010<br>TC-MTRACE-GY0020<br>TC-MTRACE-GY0030<br>TC-MTRACE-GY0040<br>TC-MTRACE-GY0050<br>TC-MTRACE-GY0060<br>TC-MTRACE-GY0070<br>TC-MTRACE-GY0080<br>TC-MTRACE-GY0090<br>TC-MTRACE-GY0100<br>TC-MTRACE-GY0110<br>TC-MTRACE-GY0120<br>TC-MTRACE-GY0130<br>TC-MTRACE-GY0140<br>TC-MTRACE-GY0150<br>TC-MTRACE-GY0160<br>TC-MTRACE-GY0170<br>TC-MTRACE-GYIPV60010<br>TC-MTRACE-GYIPV60020<br>TC-MTRACE-GYIPV60030<br>TC-MTRACE-GYIPV60040</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6255_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 28</td></tr>
+	<tr><td>&nbsp;-- Passed: 28</td></tr>	
+	<tr><td>&nbsp;TC-CR6255-HEUR0020 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTradius-radius_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 48</td></tr>
+	<tr><td>&nbsp;-- Passed: 36</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 12</td></tr>
+	<tr><td>&nbsp;TC-3GPP2-CONF0004<br>TC-3GPP2-CONF0005<br>TC-3GPP2-CONF0007<br>TC-3GPP2-CONF0008<br>TC-3GPP2-CONF0012<br>TC-CR5588-CONF0006<br>TC-CR5588-CONF0007<br>TC-CR5588-CONF0008<br>TC-CR5588-CONF0009<br>TC-CR5588-SIGN0003<br>TC-CR5588-SIGN0004<br>TC-CR5588-SIGN0005</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTrxfw-rxfw_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 197</td></tr>
+	<tr><td>&nbsp;-- Passed: 196</td></tr>	
+	<tr><td>&nbsp;TC-RXVOIP-SKYPFLOW0050 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 1</td></tr>
+	<tr><td>&nbsp;TC-RX-IPV6_SESSCREA0030</td></tr>		
+	</table></p></div>
+	
+    <div style="cursor: hand" onclick="isHidden('div8')">
+    <ul>
+        
+		<li><input type="checkbox"/>Missing TS which run in LSV&nbsp;&nbsp;</li>
+	</ul>
+    </div>
+	<div id="div8" style="display:none" contenteditable=true><p>	<table>
+	<tr><th>(FW)-NSTradius-cluster_cluster</th></tr>
+	<tr><td>&nbsp;-- Total: 3</td></tr>
+	<tr><td>&nbsp;-- Passed: 3</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTrxfw-cluster_cluster</th></tr>
+	<tr><td>&nbsp;-- Total: 5</td></tr>
+	<tr><td>&nbsp;-- Passed: 5</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTqos_fw-hardware_cluster</th></tr>
+	<tr><td>&nbsp;-- Total: 151</td></tr>
+	<tr><td>&nbsp;-- Passed: 133</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 9</td></tr>
+	<tr><td>&nbsp;TC-QOS-AGGRFUNC0570<br>TC-QOS-AGGRFUNC0580<br>TC-QOS-AGGRFUNC0590<br>TC-QOS-AGGRIPV60010<br>TC-QOS-USERFUNC0070<br>TC-QOS-USERFUNC0080<br>TC-QOS-USERFUNC0090<br>TC-QOS-USERFUNC0100<br>TC-QOS-USERFUNC0210</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 9</td></tr>
+	<tr><td>&nbsp;TC-QOS-AGGRFUNC0040<br>TC-QOS-AGGRFUNC0360<br>TC-QOS-USERFUNC0030<br>TC-QOS-USERFUNC0150<br>TC-QOS-USERFUNC0160<br>TC-QOS-USERFUNC0170<br>TC-QOS-USERFUNC0180<br>TC-QOS-USERFUNC0190<br>TC-QOS-USERFUNC0200</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTipv4v6-cluster_cluster</th></tr>
+	<tr><td>&nbsp;-- Total: 6</td></tr>
+	<tr><td>&nbsp;-- Passed: 6</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTlicensing-traffic_cluster</th></tr>
+	<tr><td>&nbsp;-- Total: 47</td></tr>
+	<tr><td>&nbsp;-- Passed: 32</td></tr>	
+	<tr><td>&nbsp;TC-LICENSING-CAPTP0020 #PA/RET<br>TC-LICENSING-CAPTP0040 #PA/RET<br>TC-LICENSING-NOLIC0010 #PA/RET<br>TC-LICENSING-TEMP0070 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 15</td></tr>
+	<tr><td>&nbsp;TC-LICENSING-CASETP0010<br>TC-LICENSING-CASETP0020<br>TC-LICENSING-CASETP0030<br>TC-LICENSING-DAYMAX0020<br>TC-LICENSING-TEMP0100<br>TC-LICENSING-TEMP0110<br>TC-LICENSING-TEMP0120<br>TC-LICENSING-TEMP0130<br>TC-LICENSING-TEMP0150<br>TC-LICENSING-TEMP0160<br>TC-LICENSING-TEMP0170<br>TC-LICENSING-TEMP0180<br>TC-LICENSING-TEMP0190<br>TC-LICENSING-TEMP0200<br>TC-LICENSING-TEMP0210</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTConfCheck-cluster_cluster</th></tr>
+	<tr><td>&nbsp;-- Total: 9</td></tr>
+	<tr><td>&nbsp;-- Passed: 8</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 1</td></tr>
+	<tr><td>&nbsp;TC-16CORES-LEGA0040</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTlicensing-management_cluster</th></tr>
+	<tr><td>&nbsp;-- Total: 48</td></tr>
+	<tr><td>&nbsp;-- Passed: 39</td></tr>	
+	<tr><td>&nbsp;TC-LICENSING-MGMT0215 #PA/RET<br>TC-LICENSING-MGMT0270 #PA/RET</td></tr>	
+	<tr><td>&nbsp;-- Failed: 7</td></tr>
+	<tr><td>&nbsp;TC-LICENSING-OPMODE0040<br>TC-LICENSING-OPMODE0050<br>TC-LICENSING-OPMODE0170<br>TC-LICENSING-OPMODE0180<br>TC-LICENSING-OPMODE0250<br>TC-LICENSING-OPMODE0260<br>TC-LICENSING-OPMODE0270</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 2</td></tr>
+	<tr><td>&nbsp;TC-LICENSING-MGMT0011<br>TC-LICENSING-MGMT0080</td></tr>		
+	</table></p></div>
+	
+    
+    <div style="cursor: hand" onclick="isHidden('div9')">
+		<ul>
+            
+			<li><input type="checkbox"/>Passed TS and same as LSV&nbsp;&nbsp;&nbsp;</li>
+		</ul>
+	</div>
+	<div id="div9" style="display:none" contenteditable=true>
+			<table>
+	<tr><th>(FW)-NSTgycounter-gycounter_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 48</td></tr>
+	<tr><td>&nbsp;-- Passed: 46</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 2</td></tr>
+	<tr><td>&nbsp;TC-CR8140-GXGY0020<br>TC-CR8140-GXRAAER0050</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcdr-cdr_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 33</td></tr>
+	<tr><td>&nbsp;-- Passed: 32</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 1</td></tr>
+	<tr><td>&nbsp;TC-CDR-IPV6CSV0022</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTqbau_gx_fw-qbau_gx_fw_standalone-remote_gx_fw_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 177</td></tr>
+	<tr><td>&nbsp;-- Passed: 177</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-candidates_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 7</td></tr>
+	<tr><td>&nbsp;-- Passed: 7</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr7406-NSTcr7406_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 43</td></tr>
+	<tr><td>&nbsp;-- Passed: 43</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTradint-radint_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 75</td></tr>
+	<tr><td>&nbsp;-- Passed: 69</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 6</td></tr>
+	<tr><td>&nbsp;TC-RADINT-IPV6TRAF022<br>TC-RADINT-IPV6TRAF025<br>TC-RADINT-IPV6TRAF026<br>TC-RADINT-IPV6TRAF027<br>TC-RADINT-IPV6TRAF028<br>TC-RADINT-IPV6TRAF030</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTgy-nstest_omitdest_ssr-sim_omitdest_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 15</td></tr>
+	<tr><td>&nbsp;-- Passed: 15</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6030_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 14</td></tr>
+	<tr><td>&nbsp;-- Passed: 14</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr6428-NSTcr6428_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 139</td></tr>
+	<tr><td>&nbsp;-- Passed: 139</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTtcpretransmit_fw-NSTtcpretransmit_fw_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 44</td></tr>
+	<tr><td>&nbsp;-- Passed: 44</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTalwred-alwred_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 89</td></tr>
+	<tr><td>&nbsp;-- Passed: 73</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 16</td></tr>
+	<tr><td>&nbsp;TC-ALWRED-CONF0010<br>TC-ALWRED-CONF0020<br>TC-ALWRED-CONF0030<br>TC-ALWRED-CONF0040<br>TC-ALWRED-CONF0050<br>TC-ALWRED-CONF0120<br>TC-ALWRED-CONF0130<br>TC-ALWRED-CONF0150<br>TC-ALWRED-CONF0220<br>TC-ALWRED-DELT0010<br>TC-ALWRED-DELT0020<br>TC-ALWRED-DELT0030<br>TC-ALWRED-DELT0040<br>TC-ALWRED-DELT0050<br>TC-ALWRED-DELT0060<br>TC-ALWRED-DELT0070</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr5939_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 27</td></tr>
+	<tr><td>&nbsp;-- Passed: 27</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTstdecdr_fw-stdecdr_fw_standalone-remote_fw_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 44</td></tr>
+	<tr><td>&nbsp;-- Passed: 44</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTdelta-delta_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 17</td></tr>
+	<tr><td>&nbsp;-- Passed: 17</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcheckDelta-checkDelta_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 28</td></tr>
+	<tr><td>&nbsp;-- Passed: 28</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-tethering_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 83</td></tr>
+	<tr><td>&nbsp;-- Passed: 83</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTradint-oracle-only_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 6</td></tr>
+	<tr><td>&nbsp;-- Passed: 6</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6893_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 55</td></tr>
+	<tr><td>&nbsp;-- Passed: 55</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTotr-oracle_only_standalone-remote_only_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 40</td></tr>
+	<tr><td>&nbsp;-- Passed: 40</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTpatterndomain-patterndomain_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 53</td></tr>
+	<tr><td>&nbsp;-- Passed: 53</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr6678-NSTcr6678_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 48</td></tr>
+	<tr><td>&nbsp;-- Passed: 48</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTuniqueid_fw-uniqueid_fw_standalone-remote_fw_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 7</td></tr>
+	<tr><td>&nbsp;-- Passed: 7</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTradius-radius_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 48</td></tr>
+	<tr><td>&nbsp;-- Passed: 36</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 12</td></tr>
+	<tr><td>&nbsp;TC-3GPP2-CONF0004<br>TC-3GPP2-CONF0005<br>TC-3GPP2-CONF0007<br>TC-3GPP2-CONF0008<br>TC-3GPP2-CONF0012<br>TC-CR5588-CONF0006<br>TC-CR5588-CONF0007<br>TC-CR5588-CONF0008<br>TC-CR5588-CONF0009<br>TC-CR5588-SIGN0003<br>TC-CR5588-SIGN0004<br>TC-CR5588-SIGN0005</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTmasq-masquerading_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 22</td></tr>
+	<tr><td>&nbsp;-- Passed: 22</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcontentEditor_fw-contentEditor_fw_ssr-sim_fw_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 11</td></tr>
+	<tr><td>&nbsp;-- Passed: 11</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTnai-nai_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 31</td></tr>
+	<tr><td>&nbsp;-- Passed: 29</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 2</td></tr>
+	<tr><td>&nbsp;TC-NAI-CONF0010<br>TC-NAI-CONF0020</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr7029_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 94</td></tr>
+	<tr><td>&nbsp;-- Passed: 94</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6009_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 58</td></tr>
+	<tr><td>&nbsp;-- Passed: 58</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTotr-otr_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 65</td></tr>
+	<tr><td>&nbsp;-- Passed: 60</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 5</td></tr>
+	<tr><td>&nbsp;TC-ONETIME-CONF0030<br>TC-ONETIME-CONF0090<br>TC-ONETIME-CONF0100<br>TC-ONETIME-CONF0120<br>TC-ONETIME-DELTA0130</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcontentEditor_fw-contentEditor_fw_standalone-remote_fw_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 11</td></tr>
+	<tr><td>&nbsp;-- Passed: 11</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcheckDelta-checkDelta_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 28</td></tr>
+	<tr><td>&nbsp;-- Passed: 28</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6428_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 118</td></tr>
+	<tr><td>&nbsp;-- Passed: 118</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTalwred-oracle-only_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 15</td></tr>
+	<tr><td>&nbsp;-- Passed: 15</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTtopuri-topuri_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 46</td></tr>
+	<tr><td>&nbsp;-- Passed: 46</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSThttpCTheader-httpCTheader_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 42</td></tr>
+	<tr><td>&nbsp;-- Passed: 42</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr6379-cr6379_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 69</td></tr>
+	<tr><td>&nbsp;-- Passed: 69</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTresetcumu-resetcumu_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 33</td></tr>
+	<tr><td>&nbsp;-- Passed: 33</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr5939_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 27</td></tr>
+	<tr><td>&nbsp;-- Passed: 27</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr6428-NSTcr6428_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 139</td></tr>
+	<tr><td>&nbsp;-- Passed: 139</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTpscsfw-pscsfw_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 156</td></tr>
+	<tr><td>&nbsp;-- Passed: 149</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 7</td></tr>
+	<tr><td>&nbsp;TC-CR6075-conf0030<br>TC-CR6075-conf0080<br>TC-CR6075-conf0090<br>TC-PSCS-BASECONF0250<br>TC-PSCS-BASECONF0260<br>TC-PSCS-BASECONF0270<br>TC-PSCS-BASECONF0330</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTicap-cfe_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 68</td></tr>
+	<tr><td>&nbsp;-- Passed: 68</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6255_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 28</td></tr>
+	<tr><td>&nbsp;-- Passed: 28</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTrxfw-oracle-only_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 16</td></tr>
+	<tr><td>&nbsp;-- Passed: 16</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTalwred-alwred_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 89</td></tr>
+	<tr><td>&nbsp;-- Passed: 73</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 16</td></tr>
+	<tr><td>&nbsp;TC-ALWRED-CONF0010<br>TC-ALWRED-CONF0020<br>TC-ALWRED-CONF0030<br>TC-ALWRED-CONF0040<br>TC-ALWRED-CONF0050<br>TC-ALWRED-CONF0120<br>TC-ALWRED-CONF0130<br>TC-ALWRED-CONF0150<br>TC-ALWRED-CONF0220<br>TC-ALWRED-DELT0010<br>TC-ALWRED-DELT0020<br>TC-ALWRED-DELT0030<br>TC-ALWRED-DELT0040<br>TC-ALWRED-DELT0050<br>TC-ALWRED-DELT0060<br>TC-ALWRED-DELT0070</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTstdecdr_fw-stdecdr_fw_ssr-sim_fw_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 44</td></tr>
+	<tr><td>&nbsp;-- Passed: 44</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSThudo2-hudo2_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 11</td></tr>
+	<tr><td>&nbsp;-- Passed: 11</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTsiblings-siblings_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 6</td></tr>
+	<tr><td>&nbsp;-- Passed: 6</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTradius-ssr-only_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 9</td></tr>
+	<tr><td>&nbsp;-- Passed: 9</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr6329-cr6329_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 22</td></tr>
+	<tr><td>&nbsp;-- Passed: 22</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTConfCheck-nstest_omitdest_ssr-sim_omitdest_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 8</td></tr>
+	<tr><td>&nbsp;-- Passed: 8</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTdelta-delta_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 17</td></tr>
+	<tr><td>&nbsp;-- Passed: 17</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTdiameterRedirect-diameterRedirect_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 91</td></tr>
+	<tr><td>&nbsp;-- Passed: 91</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6893_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 55</td></tr>
+	<tr><td>&nbsp;-- Passed: 55</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTgxch_fw-gxch_fw_standalone-remote_fw_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 40</td></tr>
+	<tr><td>&nbsp;-- Passed: 40</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcsdelta-csdelta_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 27</td></tr>
+	<tr><td>&nbsp;-- Passed: 27</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTgxch_fw-gxch_fw_ssr-sim_fw_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 40</td></tr>
+	<tr><td>&nbsp;-- Passed: 40</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr6678-NSTcr6678_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 48</td></tr>
+	<tr><td>&nbsp;-- Passed: 48</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTredircluster_fw-redircluster_fw_ssr-sim_fw_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 20</td></tr>
+	<tr><td>&nbsp;-- Passed: 20</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTredircluster_fw-redircluster_fw_standalone-remote_fw_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 20</td></tr>
+	<tr><td>&nbsp;-- Passed: 20</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTicap-cfe_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 68</td></tr>
+	<tr><td>&nbsp;-- Passed: 68</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTotr-otr_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 65</td></tr>
+	<tr><td>&nbsp;-- Passed: 60</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 5</td></tr>
+	<tr><td>&nbsp;TC-ONETIME-CONF0030<br>TC-ONETIME-CONF0090<br>TC-ONETIME-CONF0100<br>TC-ONETIME-CONF0120<br>TC-ONETIME-DELTA0130</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTratinggroup-ratinggroup_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 271</td></tr>
+	<tr><td>&nbsp;-- Passed: 258</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 13</td></tr>
+	<tr><td>&nbsp;TC-RG-CONF0020<br>TC-RG-CONF0150<br>TC-RG-CONF0151<br>TC-RG-CONF0153<br>TC-RG-CONF0154<br>TC-RG-CONF0155<br>TC-RG-CONF0156<br>TC-RG-CONF0157<br>TC-RG-CONF0158<br>TC-RG-CONF0170<br>TC-RG-CONF0200<br>TC-RG-CONF0210<br>TC-RG-GYBASIC0244</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTratinggroup-oracle-only_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 12</td></tr>
+	<tr><td>&nbsp;-- Passed: 12</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTreconflag-rcnflag_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 33</td></tr>
+	<tr><td>&nbsp;-- Passed: 31</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 2</td></tr>
+	<tr><td>&nbsp;TC-RECNFLAG-CONF0040<br>TC-RECNFLAG-CONF0050</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTpatternmidflows-patternmidflows_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 21</td></tr>
+	<tr><td>&nbsp;-- Passed: 21</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTmasq-masquerading_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 22</td></tr>
+	<tr><td>&nbsp;-- Passed: 22</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSThudo2-oracle-only_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 5</td></tr>
+	<tr><td>&nbsp;-- Passed: 5</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTpysara-pysara_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 49</td></tr>
+	<tr><td>&nbsp;-- Passed: 43</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 6</td></tr>
+	<tr><td>&nbsp;TC-SARA-PC0260<br>TC-SARA-PC0270<br>TC-SARA-PC0271<br>TC-SARA-SU0340<br>TC-SARA-SU0350<br>TC-SARA-SU0351</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTCR6845-CR6845_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 12</td></tr>
+	<tr><td>&nbsp;-- Passed: 12</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTqos_fw-sim_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 95</td></tr>
+	<tr><td>&nbsp;-- Passed: 95</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr7029-NSTcr7029_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 74</td></tr>
+	<tr><td>&nbsp;-- Passed: 74</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-ipv6_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 122</td></tr>
+	<tr><td>&nbsp;-- Passed: 120</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 2</td></tr>
+	<tr><td>&nbsp;TC-CANALIP6-SIP0010.yml<br>TC-CANALIP6-SIP0020.yml</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6248_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 28</td></tr>
+	<tr><td>&nbsp;-- Passed: 28</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-sip_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 13</td></tr>
+	<tr><td>&nbsp;-- Passed: 13</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTpatternmidflows-patternmidflows_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 21</td></tr>
+	<tr><td>&nbsp;-- Passed: 21</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcom-ssr_hl_ssr-sim_hl_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 23</td></tr>
+	<tr><td>&nbsp;-- Passed: 23</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr7029_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 94</td></tr>
+	<tr><td>&nbsp;-- Passed: 94</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTpscsfw-pscsfw_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 156</td></tr>
+	<tr><td>&nbsp;-- Passed: 149</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 7</td></tr>
+	<tr><td>&nbsp;TC-CR6075-conf0030<br>TC-CR6075-conf0080<br>TC-CR6075-conf0090<br>TC-PSCS-BASECONF0250<br>TC-PSCS-BASECONF0260<br>TC-PSCS-BASECONF0270<br>TC-PSCS-BASECONF0330</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTCR6845-CR6845_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 12</td></tr>
+	<tr><td>&nbsp;-- Passed: 12</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTpycr5690-NSTpycr5690_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 165</td></tr>
+	<tr><td>&nbsp;-- Passed: 165</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cdpi60_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 10</td></tr>
+	<tr><td>&nbsp;-- Passed: 10</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr7029-NSTcr7029_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 74</td></tr>
+	<tr><td>&nbsp;-- Passed: 74</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcontentEditor_fw-oracle-only_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 4</td></tr>
+	<tr><td>&nbsp;-- Passed: 4</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr6447-NSTcr6447_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 12</td></tr>
+	<tr><td>&nbsp;-- Passed: 12</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTpysara-pysara_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 49</td></tr>
+	<tr><td>&nbsp;-- Passed: 43</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 6</td></tr>
+	<tr><td>&nbsp;TC-SARA-PC0260<br>TC-SARA-PC0270<br>TC-SARA-PC0271<br>TC-SARA-SU0340<br>TC-SARA-SU0350<br>TC-SARA-SU0351</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTuniqueid_fw-uniqueid_fw_ssr-sim_fw_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 7</td></tr>
+	<tr><td>&nbsp;-- Passed: 7</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcdma-cdma_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 57</td></tr>
+	<tr><td>&nbsp;-- Passed: 53</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 4</td></tr>
+	<tr><td>&nbsp;TC-CDMA-CONF0015<br>TC-CDMA-CONF0016<br>TC-CDMA-DELTACONF0010<br>TC-CDMA-DELTACONF0020</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr6447-NSTcr6447_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 12</td></tr>
+	<tr><td>&nbsp;-- Passed: 12</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6716_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 20</td></tr>
+	<tr><td>&nbsp;-- Passed: 20</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTpatterndomain-patterndomain_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 53</td></tr>
+	<tr><td>&nbsp;-- Passed: 53</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTConfCheck-ssr_hl_ssr-sim_hl_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 252</td></tr>
+	<tr><td>&nbsp;-- Passed: 249</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 3</td></tr>
+	<tr><td>&nbsp;TC-SASNDC-CONF0130<br>TC-SASNDC-CONF0190<br>TC-SASNDC-CONF0210</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cdpi60_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 10</td></tr>
+	<tr><td>&nbsp;-- Passed: 10</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTgygzalignment-gygzalignment_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 13</td></tr>
+	<tr><td>&nbsp;-- Passed: 13</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcsdelta-csdelta_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 27</td></tr>
+	<tr><td>&nbsp;-- Passed: 27</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-tethering_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 83</td></tr>
+	<tr><td>&nbsp;-- Passed: 83</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTradius-cluster_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 3</td></tr>
+	<tr><td>&nbsp;-- Passed: 3</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr7406-NSTcr7406_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 43</td></tr>
+	<tr><td>&nbsp;-- Passed: 43</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6678_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 79</td></tr>
+	<tr><td>&nbsp;-- Passed: 79</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-sip_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 13</td></tr>
+	<tr><td>&nbsp;-- Passed: 13</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6428_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 118</td></tr>
+	<tr><td>&nbsp;-- Passed: 118</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcr6329-cr6329_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 22</td></tr>
+	<tr><td>&nbsp;-- Passed: 22</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTradint-radint_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 75</td></tr>
+	<tr><td>&nbsp;-- Passed: 69</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 6</td></tr>
+	<tr><td>&nbsp;TC-RADINT-IPV6TRAF022<br>TC-RADINT-IPV6TRAF025<br>TC-RADINT-IPV6TRAF026<br>TC-RADINT-IPV6TRAF027<br>TC-RADINT-IPV6TRAF028<br>TC-RADINT-IPV6TRAF030</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6030_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 14</td></tr>
+	<tr><td>&nbsp;-- Passed: 14</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTsiblings-siblings_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 6</td></tr>
+	<tr><td>&nbsp;-- Passed: 6</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-candidates_ssr-sim</th></tr>
+	<tr><td>&nbsp;-- Total: 7</td></tr>
+	<tr><td>&nbsp;-- Passed: 7</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTanalyzer-cr6009_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 58</td></tr>
+	<tr><td>&nbsp;-- Passed: 58</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTmultiaccess-multiaccess_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 90</td></tr>
+	<tr><td>&nbsp;-- Passed: 90</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSThudo2-hudo2_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 11</td></tr>
+	<tr><td>&nbsp;-- Passed: 11</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTcdr-cdr_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 33</td></tr>
+	<tr><td>&nbsp;-- Passed: 32</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 1</td></tr>
+	<tr><td>&nbsp;TC-CDR-IPV6CSV0022</td></tr>		
+	</table>	<table>
+	<tr><th>(FW)-NSTinactimer-inactim_standalone-remote</th></tr>
+	<tr><td>&nbsp;-- Total: 16</td></tr>
+	<tr><td>&nbsp;-- Passed: 16</td></tr>	
+	<tr><td>&nbsp;</td></tr>	
+	<tr><td>&nbsp;-- Failed: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	<tr><td>&nbsp;-- Skipped: 0</td></tr>
+	<tr><td>&nbsp;</td></tr>		
+	</table>
+	</div>
+	
+    <p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</div>
+
+</body>
+
+</html>
