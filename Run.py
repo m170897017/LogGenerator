@@ -65,15 +65,18 @@ class testReportGenerator(object):
         pageInfo = map(self.httpHandler.get_content_from_url, [self.srcURL, self.cmpURL])
         self.myHTMLParser.feed(pageInfo[0].decode('utf-8'))
         
+        
         # store pipeLine from list to dict, like {24:{'firstTestID':4, 'retestID':3}}
         for i in xrange(0, len(self.myHTMLParser.pipelineData), 3):
+            if self.myHTMLParser.pipelineData[i+1] is None:
+                continue
             self.pipeLineInfo[self.myHTMLParser.pipelineData[i]] = {'firstTestID':self.myHTMLParser.pipelineData[i+1],
                                                                     'retestID':self.myHTMLParser.pipelineData[i+2],
                                                                     }            
-            
+#         print self.pipeLineInfo    
         
 #         srcBuilds = copy.deepcopy(self.myHTMLParser.pipelineData[::3])
-        srcBuilds = self.myHTMLParser.pipelineData[::3]
+        srcBuilds = self.pipeLineInfo.keys()
         
         # if you want to use self.myHTMLParser.pipelineData, you have to reset it here to restore new data
         # if not, just let it be
@@ -112,12 +115,13 @@ class testReportGenerator(object):
         '''   
         
         # we will try to fetch final report from two places
+        print 'reportPath is', reportPath
         showSavedPageInfo = self.httpHandler.get_content_from_url(reportPath)
         showFinalReportPageInfo = self.httpHandler.get_content_from_url(reportPath.replace('saved', 'savednotes'))
         
 #         with open('C:\\Temp\\saved.txt', 'w') as f:
 #             f.write(showSavedPageInfo)
-#             
+#              
 #         with open('C:\\Temp\\savednotes.txt', 'w') as f:
 #             f.write(showFinalReportPageInfo)
 #         assert 0
@@ -138,12 +142,14 @@ class testReportGenerator(object):
             print '='*20
             raw_input('Now press enter to exit.')
             exit()
-        except Exception as e:
-            print '='*20
-            print 'It seems there is no test result in your feature branch.'
-            print '='*20
-            raw_input('Now press enter to exit.')
-            exit()
+#         except Exception as e:
+#             
+#             print repr(e)
+#             print '='*20
+#             print 'It seems there is no test result in your feature branch.'
+#             print '='*20
+#             raw_input('Now press enter to exit.')
+#             exit()
             
         
             
